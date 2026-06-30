@@ -47,6 +47,23 @@
 			<scope>provided</scope>
 		</dependency><!--project lambok for getter and setter and another things to
 		avoid code-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency><!--
+		 at first, it searches for database to connect when spring main run
+		 it provides
+		@Entity
+		@Table
+		@Id
+		@Column
+		@GeneratedValue
+		also provide the database link if you have database else it will give error-->
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency> <!-- mysql connector jpa connect spring entity with its database. -->
 	</dependencies>
 
 	<build>
